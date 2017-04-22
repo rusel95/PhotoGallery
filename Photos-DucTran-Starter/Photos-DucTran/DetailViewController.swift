@@ -11,12 +11,13 @@ import UIKit
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var categoryImageView: UIImageView!
+    
     var image: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        categoryImageView.image = self.image
+        categoryImageView.image = image
         navigationItem.title = "Photo"
     }
 }

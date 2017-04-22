@@ -13,8 +13,8 @@
         <scene sceneID="i0g-EV-AXd">
             <objects>
                 <collectionViewController id="Hi7-1y-TGE" customClass="PhotosCollectionViewController" customModule="Photos_DucTran" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="k6U-rr-5TZ">
-                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="k6U-rr-5TZ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="luO-Os-2lO">
@@ -84,9 +84,11 @@
                             <outlet property="delegate" destination="Hi7-1y-TGE" id="Pu2-y9-dUk"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Photos" id="gMN-re-c9P"/>
+                    <navigationItem key="navigationItem" title="Photos" id="gMN-re-c9P">
+                        <barButtonItem key="backBarButtonItem" title="  " id="gN0-nv-UDK"/>
+                    </navigationItem>
                     <connections>
-                        <segue destination="WFH-Bl-5nI" kind="show" id="RPr-OF-k6u"/>
+                        <segue destination="WFH-Bl-5nI" kind="show" identifier="ShowDetail" id="RPr-OF-k6u"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UB6-b9-yjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,12 +103,12 @@
                         <viewControllerLayoutGuide type="top" id="xEa-eM-NHh"/>
                         <viewControllerLayoutGuide type="bottom" id="9vx-P6-i7A"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="UXs-SO-VJW">
-                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                    <view key="view" contentMode="scaleToFill" id="UXs-SO-VJW">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dz6-kV-1tk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,7 +130,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZUe-Ee-3i2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="iOI-lH-OWD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iOI-lH-OWD" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="m6H-8R-2rH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
